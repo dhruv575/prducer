@@ -861,4 +861,57 @@ body {
 /* Hide markdown preview on final step */
 .final-step-active .markdown-preview {
   display: none;
+}
+
+/* Additional Styles for FinalStep */
+
+.next-steps-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--gray-medium);
+}
+
+.next-steps-list {
+  list-style: decimal; /* Use numbered list */
+  padding-left: 20px; /* Indent list */
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between list items */
+}
+
+.next-steps-list li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.next-steps-list li code {
+  font-family: monospace;
+  background-color: #f8f9fa;
+  padding: 2px 5px;
+  border-radius: 4px;
+  border: 1px solid #eaecef;
+  font-size: 0.9em;
+  color: #d63384; /* Pinkish color for code */
+}
+
+.next-steps-list li a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.next-steps-list li a:hover {
+  text-decoration: underline;
+}
+
+.final-step-card .typeform-link-button {
+  /* This class is no longer used directly in the updated component, */
+  /* but keeping it here in case it's needed elsewhere or for reference */
+  margin-top: 10px; /* Add some space if it were used below the download button */
 } 
